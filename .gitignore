@@ -1,2 +1,11 @@
+# venv
 venv/
+# Python
 __pycache__/
+*.py[cod]
+# Jupyter
+.ipynb_checkpoints/
+# Models
+/models/
+# Secrets
+*.env
