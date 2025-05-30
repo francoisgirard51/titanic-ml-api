@@ -1,0 +1,10 @@
+[flake8]
+# Allow longer lines
+max-line-length = 100
+
+# Dactivate specific checks
+ignore =
+    E231,  # missing whitespace after ','
+    E302,  # expected 2 blank lines before function/class
+    E305,  # expected 2 blank lines after class/function
+    E501   # line too long
