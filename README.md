@@ -1,8 +1,8 @@
 # Titanic ML API – Predicting Passenger Survival
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/francoisgirard51/titanic-ml-api)](https://hub.docker.com/r/francoisgirard51/titanic-ml-api)
-![CI](https://github.com/francoisgirard51/titanic-ml-api/actions/workflows/test.yml/badge.svg)
-[![HF Space](https://img.shields.io/badge/🤗%20View%20on%20Hugging%20Face-blue)](https://huggingface.co/spaces/FrancoisGirard51/titanic-survival-predictor)
+[![CI](https://github.com/francoisgirard51/titanic-ml-api/actions/workflows/test.yml/badge.svg)](https://github.com/francoisgirard51/titanic-ml-api/actions/workflows/test.yml)
+[![View on Hugging Face](https://img.shields.io/badge/🤗%20View%20on%20Hugging%20Face-blue)](https://huggingface.co/spaces/FrancoisGirard51/titanic-survival-predictor)
 
 
 A Dockerized FastAPI microservice that predicts Titanic passenger survival using a custom-built scikit-learn pipeline. Designed for learning, deployment, and demonstration purposes.
@@ -23,23 +23,32 @@ A Dockerized FastAPI microservice that predicts Titanic passenger survival using
 
 ```
 titanic-ml-api/
-├── data/                 # Raw data: train.csv, test.csv
-├── models/               # Serialized model: titanic_pipeline.joblib
-├── notebooks/            # EDA notebook
-├── src/                  # Application code
-│   ├── api.py            # FastAPI app
-│   ├── data.py           # Data loading utils
-│   ├── features.py       # Feature engineering pipeline
-│   ├── train.py          # Training script
-│   ├── evaluate.py       # Evaluation script
+├── .github/                # CI/CD workflows
+│   └── workflows/
+├── .dockerignore           # Docker exclusions
+├── .gitignore              # Git ignore rules
+├── Dockerfile              # Containerization
+├── Makefile                # Command shortcuts (build, run, etc.)
+├── README.md               # Project overview
+├── app.py                  # Gradio entrypoint for HF Spaces
+├── data/                   # Raw data: train.csv, test.csv
+│   ├── train.csv
+│   └── test.csv
+├── models/                 # Serialized model artifacts
+│   └── .gitkeep
+├── notebooks/              # EDA notebooks
+│   └── titanic_eda.ipynb
+├── requirements.dev.txt    # Dev dependencies (human-friendly)
+├── requirements.txt        # Frozen dependencies (pip freeze)
+├── src/                    # Application code
+│   ├── api.py
+│   ├── data.py
+│   ├── features.py
+│   ├── train.py
+│   ├── evaluate.py
 │   └── __init__.py
-├── tests/                # Tests
-│   └── test_api.py
-├── requirements.txt      # Python dependencies
-├── Dockerfile            # Containerization
-├── .gitignore            # Ignored files
-├── .dockerignore         # Docker exclusions
-└── README.md
+└── tests/                  # Unit & integration tests
+    └── test_api.py
 ```
 
 ---
