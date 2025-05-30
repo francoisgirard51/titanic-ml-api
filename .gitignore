@@ -1,5 +1,6 @@
 # Virtualenv
 venv/
+.venv/
 
 # Python cache
 __pycache__/
@@ -13,8 +14,13 @@ tests/.pytest_cache/
 # macOS
 .DS_Store
 
-# Jupyter
+# Jupyter notebooks
 .ipynb_checkpoints/
+**/.ipynb_checkpoints/
 
 # Secrets, logs, config
 *.env
+
+# Models (joblib only)
+models/*.joblib
+!models/.gitkeep
