@@ -1,7 +1,7 @@
 # Titanic ML API – Predicting Passenger Survival
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/francoisgirard51/titanic-ml-api)](https://hub.docker.com/r/francoisgirard51/titanic-ml-api)
-[![CI](https://github.com/francoisgirard51/titanic-ml-api/actions/workflows/test.yml/badge.svg)](https://github.com/francoisgirard51/titanic-ml-api/actions/workflows/test.yml)
+[![CI Status](https://github.com/francoisgirard51/titanic-ml-api/actions/workflows/ci.yml/badge.svg)](https://github.com/francoisgirard51/titanic-ml-api/actions/workflows/ci.yml)
 [![View on Hugging Face](https://img.shields.io/badge/🤗%20View%20on%20Hugging%20Face-blue)](https://huggingface.co/spaces/FrancoisGirard51/titanic-survival-predictor)
 
 
